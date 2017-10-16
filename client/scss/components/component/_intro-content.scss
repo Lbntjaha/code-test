@@ -1,0 +1,38 @@
+.intro__content {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	text-align: center;
+	&.less-mg {
+		margin-bottom: 50px;
+		@include media-breakpoint-down(sm) {
+			margin-top: 40px;
+			margin-bottom: 20px;
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+.intro__title {
+  color: $secondary;
+	font-size: 50px;
+	text-transform: capitalize;
+  line-height: 1.28;
+  font-weight: 500;
+  margin-bottom: 10px;
+  @include media-breakpoint-down(sm) {
+		font-size: 32px;
+	}
+}
+.intro__text {
+  font-weight: 500;
+  font-size: 24px;
+	color: $lightgrey;
+	@include media-breakpoint-down(sm) {
+		font-size: 20px;
+		br {
+			display: none;
+		}
+	}
+}

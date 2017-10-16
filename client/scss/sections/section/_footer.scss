@@ -1,0 +1,33 @@
+.footer {
+	background: $secondary;
+}
+.footer__content {
+	height: 100px;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	@include media-breakpoint-down(sm) {
+		height: initial;
+		flex-direction: column;
+		padding: 40px 15px;
+	}
+}
+.footer__copyright {
+	font-size: 20px;
+  line-height: 1.5;
+  color: $white;
+  @include media-breakpoint-down(sm) {
+		height: initial;
+		flex-direction: column;
+		text-align: center;
+		order: 2;
+	}
+}
+.footer__logo {
+	@include media-breakpoint-down(sm) {
+		height: initial;
+		margin-bottom: 40px;
+		order: 1;
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,13 @@
+.hero {
+	@include media-breakpoint-down(sm) {
+		br {
+			display: none;
+		}
+	}
+}
+.hero__image {
+	text-align: center;
+	img {
+		max-width: 100%;
+	}
+}

@@ -1,0 +1,25 @@
+.call {
+	background: $primary;
+}
+.call__content {
+	justify-content: space-between;
+	align-items: center;
+	display: inline-flex;
+	height: 110px;
+	@include media-breakpoint-down(sm) {
+		text-align: center;
+		height: initial;
+		display: flex;
+		flex-direction: column;
+		padding: 30px 15px;
+	}
+}
+.call__text {
+	color: $white;
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 20px;
+	}
+}
+.call__button {
+  background: $secondary;
+}
