@@ -6,7 +6,6 @@
 }
 .contact__form {
 	margin: 0 auto;
-	padding-left: 60px;
 	@include media-breakpoint-down(sm) {
 		padding-left: 15px;
 	}
@@ -49,7 +48,16 @@
 			.form-group__error {
 				display: block;
 			}
+			.form-group-icon__error {
+			 	display: block;
+			 }
+			 .form-group-icon__req {
+			 	display: none;
+			 }
 		}
+		.form-group-icon__error {
+		 	display: none;
+		 }
 		.form-group__error {
 			color: #d0011b;
 			font-weight: 500;
